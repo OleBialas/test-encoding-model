@@ -1,4 +1,6 @@
+# file types
 *.mat
+*.nc
 
 # pixi environments
 .pixi/*
