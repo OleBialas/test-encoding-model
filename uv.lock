@@ -20,6 +20,15 @@ wheels = [
 ]
 
 [[package]]
+name = "array-api-compat"
+version = "1.13.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/68/36/f799b36d7025a92a23819f9f06541babdb84b6fd0bd4253f8be2eca348a4/array_api_compat-1.13.0.tar.gz", hash = "sha256:8b83a56aa8b9477472fee37f7731968dd213e20c198a05ac49caeff9b03f48a6", size = 103065 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/df/5d/493b1b5528ab5072feae30821ff3a07b7a0474213d548efb1fdf135f85c1/array_api_compat-1.13.0-py3-none-any.whl", hash = "sha256:c15026a0ddec42815383f07da285472e1b1ff2e632eb7afbcfe9b08fcbad9bf1", size = 58585 },
+]
+
+[[package]]
 name = "asttokens"
 version = "3.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -617,6 +626,19 @@ wheels = [
 ]
 
 [[package]]
+name = "mtrf"
+version = "2.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "array-api-compat" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6f/73/239079ba7636b1e063697d93a691349632fd1f533806ebde154c84eb5c9d/mtrf-2.1.2.tar.gz", hash = "sha256:fa111e8b17d68ede1f76dfa29950003bf2192c308f4fe8bc15bfe00579f6bf53", size = 23758 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/00/069a8f4aa148419bf9fd685be7434f3f994856fabc9888410e889e4cc833/mtrf-2.1.2-py3-none-any.whl", hash = "sha256:6e64e51aabfdb937e729baa64a8f206e2a0216526e290f61ade17f834bf97549", size = 21328 },
+]
+
+[[package]]
 name = "nest-asyncio"
 version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1197,6 +1219,7 @@ dependencies = [
     { name = "h5py" },
     { name = "ipykernel" },
     { name = "matplotlib" },
+    { name = "mtrf" },
     { name = "pandas" },
     { name = "scikit-learn" },
     { name = "scipy" },
@@ -1209,6 +1232,7 @@ requires-dist = [
     { name = "h5py", specifier = ">=3.15.1" },
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "mtrf", specifier = ">=2.1.2" },
     { name = "pandas", specifier = ">=3.0.0" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "scipy", specifier = ">=1.17.0" },
